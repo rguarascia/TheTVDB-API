@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WatTmdb.V3;
+using TagLib;
+using TagLib.Id3v2;
 
 //Ryan Guarasia
 //June, 01, 2014
@@ -48,9 +50,26 @@ namespace TheTVDB_API
 
            richTextBox1.Text = myMovie.overview;
 
-           txtBudget.Text = String.Format("{0:C}", myMovie.budget);
-
            txtRating.Text = String.Format("{0:0}", myMovie.popularity);
+        }
+
+        private void btnSet_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog getFile = new OpenFileDialog();
+            if (getFile.ShowDialog() == DialogResult.OK)
+            {
+
+                TagLib.File myVideo = TagLib.File.Create(getFile.FileName);
+
+                myVideo.Tag.Title = "Test";
+
+                myVideo.Tag.Year = 2014;
+
+                
+
+                myVideo.Save();
+
+            }
         }
     }
 }
