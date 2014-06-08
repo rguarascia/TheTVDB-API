@@ -19,7 +19,7 @@ namespace TheTVDB_API
 {
     public partial class frmInformation : Form
     {
-        WatTmdb.V3.Tmdb API = new Tmdb("2d1945d4baade9251047015f58d86230", "en");
+        WatTmdb.V3.Tmdb API = new Tmdb("Nope", "en");
         int movieID;
         TmdbMovie myMovie;
         public frmInformation(int TitleId)
