@@ -19,7 +19,7 @@ namespace TheTVDB_API
     public partial class frmMain : Form
     {
         string MovieTitle;
-        WatTmdb.V3.Tmdb API = new Tmdb("Nope", "en");
+        WatTmdb.V3.Tmdb API = new Tmdb("nope", "en");
         public static List<MovieResult> queryMovie;
         public frmMain()
         {
@@ -33,7 +33,7 @@ namespace TheTVDB_API
                 queryMovie = API.SearchMovie(MovieTitle, 1).results;
             }
             catch (ArgumentException) { }
-            listBox1.DataSource = queryMovie;
+           listBox1.DataSource = queryMovie;
 
         }
 

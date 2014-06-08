@@ -35,6 +35,7 @@
             this.txtYear = new System.Windows.Forms.TextBox();
             this.picPoster = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.savePosterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtRating = new System.Windows.Forms.TextBox();
@@ -44,7 +45,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.lstCrew = new System.Windows.Forms.ListBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.savePosterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnPlayTrailer = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picPoster)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -99,6 +100,13 @@
             this.savePosterToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(135, 26);
+            // 
+            // savePosterToolStripMenuItem
+            // 
+            this.savePosterToolStripMenuItem.Name = "savePosterToolStripMenuItem";
+            this.savePosterToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.savePosterToolStripMenuItem.Text = "Save Poster";
+            this.savePosterToolStripMenuItem.Click += new System.EventHandler(this.savePosterToolStripMenuItem_Click);
             // 
             // richTextBox1
             // 
@@ -184,18 +192,22 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "Actors";
             // 
-            // savePosterToolStripMenuItem
+            // btnPlayTrailer
             // 
-            this.savePosterToolStripMenuItem.Name = "savePosterToolStripMenuItem";
-            this.savePosterToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.savePosterToolStripMenuItem.Text = "Save Poster";
-            this.savePosterToolStripMenuItem.Click += new System.EventHandler(this.savePosterToolStripMenuItem_Click);
+            this.btnPlayTrailer.Location = new System.Drawing.Point(89, 375);
+            this.btnPlayTrailer.Name = "btnPlayTrailer";
+            this.btnPlayTrailer.Size = new System.Drawing.Size(75, 23);
+            this.btnPlayTrailer.TabIndex = 16;
+            this.btnPlayTrailer.Text = "Trailer";
+            this.btnPlayTrailer.UseVisualStyleBackColor = true;
+            this.btnPlayTrailer.Click += new System.EventHandler(this.btnPlayTrailer_Click);
             // 
             // frmInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(830, 427);
+            this.Controls.Add(this.btnPlayTrailer);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lstCrew);
             this.Controls.Add(this.label4);
@@ -239,5 +251,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem savePosterToolStripMenuItem;
+        private System.Windows.Forms.Button btnPlayTrailer;
     }
 }
