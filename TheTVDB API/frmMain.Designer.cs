@@ -52,8 +52,8 @@
             this.listBox1.Location = new System.Drawing.Point(137, 12);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(295, 160);
-            this.listBox1.TabIndex = 1;
-                // 
+            this.listBox1.TabIndex = 6;
+            // 
             // txtMovieTitle
             // 
             this.txtMovieTitle.Location = new System.Drawing.Point(12, 12);
@@ -68,7 +68,7 @@
             this.radDynamic.Location = new System.Drawing.Point(12, 90);
             this.radDynamic.Name = "radDynamic";
             this.radDynamic.Size = new System.Drawing.Size(107, 17);
-            this.radDynamic.TabIndex = 3;
+            this.radDynamic.TabIndex = 5;
             this.radDynamic.Text = "Dynamic (Slower)";
             this.radDynamic.UseVisualStyleBackColor = true;
             // 
@@ -79,7 +79,7 @@
             this.radNormal.Location = new System.Drawing.Point(12, 67);
             this.radNormal.Name = "radNormal";
             this.radNormal.Size = new System.Drawing.Size(109, 17);
-            this.radNormal.TabIndex = 2;
+            this.radNormal.TabIndex = 4;
             this.radNormal.TabStop = true;
             this.radNormal.Text = "Normal (preferred)";
             this.radNormal.UseVisualStyleBackColor = true;
@@ -89,7 +89,7 @@
             this.btnData.Location = new System.Drawing.Point(12, 149);
             this.btnData.Name = "btnData";
             this.btnData.Size = new System.Drawing.Size(119, 23);
-            this.btnData.TabIndex = 4;
+            this.btnData.TabIndex = 3;
             this.btnData.Text = "Select";
             this.btnData.UseVisualStyleBackColor = true;
             this.btnData.Click += new System.EventHandler(this.btnTop_Click);
@@ -105,6 +105,7 @@
             this.Controls.Add(this.txtMovieTitle);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnSearch);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.Name = "frmMain";
             this.Text = "TMDB lib ";
             this.ResumeLayout(false);
