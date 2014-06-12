@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WatTmdb.V3;
 using TagLib;
+using System.IO;
+using System.Net;
 using TagLib.Id3v2;
 
 //Ryan Guarasia
@@ -19,10 +21,11 @@ namespace TheTVDB_API
 {
     public partial class frmInformation : Form
     {
-        WatTmdb.V3.Tmdb API = new Tmdb("nope", "en");
+        WatTmdb.V3.Tmdb API = new Tmdb("Nope", "en");
         int movieID;
         TmdbMovie myMovie;
         WatTmdb.V3.TmdbMovieImages myPoster;
+        frmTrailer playTrailer;
         public frmInformation(int TitleId)
         {
             InitializeComponent();
@@ -80,25 +83,7 @@ namespace TheTVDB_API
 
         private void savePosterToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Save the poster with horrible quality
-            SaveFileDialog savePoster = new SaveFileDialog();
-            int postercount = myPoster.posters.Count;
-            Bitmap[] allPosters = new Bitmap[postercount];
-            Poster[] getPoster = new Poster[postercount];
-
-            savePoster.Filter = "PNG(*.png)|*.png";
-            if (savePoster.ShowDialog() == DialogResult.OK)
-                picPoster.Image.Save(savePoster.FileName);
-
-            for (int x = 0; x < postercount; x++)
-                getPoster[x] = myPoster.posters[x];
-
-            for (int n = 0; n < getPoster.Length; n++)
-            {
-                MessageBox.Show(getPoster[n].file_path);
-                
-                
-            }
+            PosterSizer();
         }
 
         private void frmInformation_FormClosing(object sender, FormClosingEventArgs e)
@@ -108,8 +93,36 @@ namespace TheTVDB_API
 
         private void btnPlayTrailer_Click(object sender, EventArgs e)
         {
-            frmTrailer playTrailer = new frmTrailer(movieID);
+            playTrailer = new frmTrailer(movieID);
             playTrailer.Show();
+
+        }
+
+        private void gtnBack_Click(object sender, EventArgs e)
+        {
+            //Debugging does not like this.
+            Application.Restart();
+        }
+
+        private void PosterSizer()
+        {
+            SaveFileDialog posterPath = new SaveFileDialog();
+            posterPath.Filter = "PNG(*.png)|*.png";
+            //Gets the real size from URL
+            try
+            {
+                //Weird stuff because pulling from URL.
+                WebRequest request = WebRequest.Create("https://image.tmdb.org/t/p/original/" + myPoster.posters[0].file_path);
+                WebResponse response = request.GetResponse();
+                Stream responseStream = response.GetResponseStream();
+                Bitmap posterFile = new Bitmap(responseStream);
+                if (posterPath.ShowDialog() == DialogResult.OK)
+                    posterFile.Save(posterPath.FileName, System.Drawing.Imaging.ImageFormat.Png);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Poster not found");
+            }
 
         }
     }

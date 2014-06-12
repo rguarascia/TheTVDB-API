@@ -46,6 +46,7 @@
             this.lstCrew = new System.Windows.Forms.ListBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnPlayTrailer = new System.Windows.Forms.Button();
+            this.gtnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picPoster)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -194,19 +195,30 @@
             // 
             // btnPlayTrailer
             // 
-            this.btnPlayTrailer.Location = new System.Drawing.Point(89, 375);
+            this.btnPlayTrailer.Location = new System.Drawing.Point(662, 377);
             this.btnPlayTrailer.Name = "btnPlayTrailer";
-            this.btnPlayTrailer.Size = new System.Drawing.Size(75, 23);
+            this.btnPlayTrailer.Size = new System.Drawing.Size(75, 38);
             this.btnPlayTrailer.TabIndex = 16;
             this.btnPlayTrailer.Text = "Trailer";
             this.btnPlayTrailer.UseVisualStyleBackColor = true;
             this.btnPlayTrailer.Click += new System.EventHandler(this.btnPlayTrailer_Click);
+            // 
+            // gtnBack
+            // 
+            this.gtnBack.Location = new System.Drawing.Point(87, 375);
+            this.gtnBack.Name = "gtnBack";
+            this.gtnBack.Size = new System.Drawing.Size(75, 23);
+            this.gtnBack.TabIndex = 17;
+            this.gtnBack.Text = "Go Back";
+            this.gtnBack.UseVisualStyleBackColor = true;
+            this.gtnBack.Click += new System.EventHandler(this.gtnBack_Click);
             // 
             // frmInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(830, 427);
+            this.Controls.Add(this.gtnBack);
             this.Controls.Add(this.btnPlayTrailer);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lstCrew);
@@ -252,5 +264,6 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem savePosterToolStripMenuItem;
         private System.Windows.Forms.Button btnPlayTrailer;
+        private System.Windows.Forms.Button gtnBack;
     }
 }

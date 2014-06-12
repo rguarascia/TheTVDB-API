@@ -12,7 +12,7 @@ namespace TheTVDB_API
 {
     public partial class frmTrailer : Form
     {
-        WatTmdb.V3.Tmdb API = new Tmdb("nope", "en");
+        WatTmdb.V3.Tmdb API = new Tmdb("Nope", "en");
         int trailerLink;
         public frmTrailer(int link)
         {
