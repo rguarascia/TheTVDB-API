@@ -1,0 +1,32 @@
+C:\Users\Ryan\AppData\Local\Temporary Projects\TheTVDB API\bin\Debug\TheTVDB API.exe.config
+C:\Users\Ryan\Google Drive\C#\TheTVDB API\TheTVDB API\bin\Debug\TheTVDB API.exe.config
+C:\Users\Ryan\Google Drive\C#\TheTVDB API\TheTVDB API\bin\Debug\TheTVDB API.exe
+C:\Users\Ryan\Google Drive\C#\TheTVDB API\TheTVDB API\bin\Debug\TheTVDB API.pdb
+C:\Users\Ryan\Google Drive\C#\TheTVDB API\TheTVDB API\bin\Debug\WatTmdb.pdb
+C:\Users\Ryan\Google Drive\C#\TheTVDB API\TheTVDB API\obj\Debug\TheTVDB API.csprojResolveAssemblyReference.cache
+C:\Users\Ryan\Google Drive\C#\TheTVDB API\TheTVDB API\obj\Debug\TheTVDB_API.Properties.Resources.resources
+C:\Users\Ryan\Google Drive\C#\TheTVDB API\TheTVDB API\obj\Debug\TheTVDB API.csproj.GenerateResource.Cache
+C:\Users\Ryan\Google Drive\C#\TheTVDB API\TheTVDB API\obj\Debug\TheTVDB API.exe
+C:\Users\Ryan\Google Drive\C#\TheTVDB API\TheTVDB API\obj\Debug\TheTVDB API.pdb
+C:\Users\Ryan\Google Drive\C#\TheTVDB API\TheTVDB API\obj\Debug\TheTVDB_API.frmMain.resources
+C:\Users\Ryan\Google Drive\C#\TheTVDB-API\TheTVDB API\bin\Debug\TheTVDB API.exe.config
+C:\Users\Ryan\Google Drive\C#\TheTVDB-API\TheTVDB API\obj\Debug\TheTVDB API.exe
+C:\Users\Ryan\Google Drive\C#\TheTVDB-API\TheTVDB API\obj\Debug\TheTVDB API.pdb
+C:\Users\Ryan\Google Drive\C#\TheTVDB-API\TheTVDB API\bin\Debug\TheTVDB API.exe
+C:\Users\Ryan\Google Drive\C#\TheTVDB-API\TheTVDB API\bin\Debug\TheTVDB API.pdb
+C:\Users\Ryan\Google Drive\C#\TheTVDB-API\TheTVDB API\bin\Debug\WatTmdb.pdb
+C:\Users\Ryan\Google Drive\C#\TheTVDB-API\TheTVDB API\obj\Debug\TheTVDB API.csprojResolveAssemblyReference.cache
+C:\Users\Ryan\Google Drive\C#\TheTVDB-API\TheTVDB API\obj\Debug\TheTVDB_API.frmInformation.resources
+C:\Users\Ryan\Google Drive\C#\TheTVDB-API\TheTVDB API\obj\Debug\TheTVDB_API.frmMain.resources
+C:\Users\Ryan\Google Drive\C#\TheTVDB-API\TheTVDB API\obj\Debug\TheTVDB_API.Properties.Resources.resources
+C:\Users\Ryan\Google Drive\C#\TheTVDB-API\TheTVDB API\obj\Debug\TheTVDB API.csproj.GenerateResource.Cache
+C:\Users\Ryan\Google Drive\C#\TheTVDB-API\TheTVDB API\bin\Debug\Interop.WMPLib.dll
+C:\Users\Ryan\Google Drive\C#\TheTVDB-API\TheTVDB API\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Ryan\Google Drive\C#\TheTVDB-API\TheTVDB API\obj\Debug\Interop.WMPLib.dll
+C:\Users\Ryan\Google Drive\C#\TheTVDB-API\TheTVDB API\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Ryan\Google Drive\C#\TheTVDB-API\TheTVDB API\obj\Debug\TheTVDB API.csproj.ResolveComReference.cache
+C:\Users\Ryan\Google Drive\C#\TheTVDB-API\TheTVDB API\bin\Debug\Interop.ShockwaveFlashObjects.dll
+C:\Users\Ryan\Google Drive\C#\TheTVDB-API\TheTVDB API\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\Users\Ryan\Google Drive\C#\TheTVDB-API\TheTVDB API\obj\Debug\Interop.ShockwaveFlashObjects.dll
+C:\Users\Ryan\Google Drive\C#\TheTVDB-API\TheTVDB API\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\Users\Ryan\Google Drive\C#\TheTVDB-API\TheTVDB API\obj\Debug\TheTVDB_API.frmTrailer.resources
